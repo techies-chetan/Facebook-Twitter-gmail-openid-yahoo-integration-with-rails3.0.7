@@ -197,7 +197,7 @@ Devise.setup do |config|
   config.sign_out_via = :delete
 
   # ==> OmniAuth
-  	 config.omniauth :facebook, "193396707414998", "55dd10d818967dedcb73a50af8192cf2",{:scope => 'email, offline_access',:client_options => {:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}} 
+  	 config.omniauth :facebook, "310665712300271", "0acc54fe0472761c5e2acd92cab730c4",{:scope => 'email, offline_access',:client_options => {:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}} 
   	 config.omniauth :twitter, "YfKK2DwoBelEVbsuE8cIw", "H9zCMNwyZtCHFG5K5xYE83wS2DfYOhdKRh9XL0oZg",:client_options => {:ssl => {:ca_path => '/etc/ssl/certs'}}
   	 config.omniauth :linkedin, "e18u8mxjdkq4", "mYHYZOIenibtUUzJ" 
   	 config.omniauth :open_id, :store => OpenID::Store::Filesystem.new('/tmp'), :require => 'omniauth-openid'	
