@@ -1,0 +1,16 @@
+<% unless user_signed_in? -%>
+  <p><%= link_to 'Sign up as User', new_user_registration_path %></p>
+  <p><%= link_to 'Sign in as User', new_user_session_path %></p>
+  <%= link_to image_tag("facebook-logo.png",:size=>"70x70"), user_omniauth_authorize_path(:facebook) %>
+  <%=link_to image_tag("yahoo_logo.gif",:size=>"70x70"), user_omniauth_authorize_path(:open_id, :openid_url => "http://yahoo.com")%>
+  <%=link_to image_tag("openid.png",:size=>"70x70"), user_omniauth_authorize_path(:open_id)%>
+  <%=link_to image_tag("google.jpg",:size=>"70x70"), user_omniauth_authorize_path(:google)%>
+  <%#=link_to 'GMail', user_omniauth_authorize_path(:google_apps)%>
+  <%= link_to image_tag("linked_logo.png",:size=>"70x70"), user_omniauth_authorize_path(:linkedin) %>
+  <%= link_to image_tag("twitter-logo.png",:size=>"70x70"), user_omniauth_authorize_path(:twitter) %>
+<% end -%>
+
+<% if user_signed_in? -%>
+  <p><%#= link_to 'Token Authentication Example', token_path(:auth_token => current_user.authentication_token) %></p>
+<% end -%>
+
