@@ -198,7 +198,7 @@ Devise.setup do |config|
 
   # ==> OmniAuth
   	 config.omniauth :facebook, "310665712300271", "0acc54fe0472761c5e2acd92cab730c4",{:scope => 'email, offline_access',:client_options => {:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}} 
-  	 config.omniauth :twitter, "YfKK2DwoBelEVbsuE8cIw", "H9zCMNwyZtCHFG5K5xYE83wS2DfYOhdKRh9XL0oZg",:client_options => {:ssl => {:ca_path => '/etc/ssl/certs'}}
+  	 config.omniauth :twitter, "O2PLlcGCzh1yV62cRrk7Og", "TNeKDxxWJF5jd9DuW6sqSpDnRV8XSZxzqpPD3MzGQ",:client_options => {:ssl => {:ca_path => '/etc/ssl/certs'}}
   	 config.omniauth :linkedin, "e18u8mxjdkq4", "mYHYZOIenibtUUzJ" 
   	 config.omniauth :open_id, :store => OpenID::Store::Filesystem.new('/tmp'), :require => 'omniauth-openid'	
 	 config.omniauth :open_id, :store => OpenID::Store::Filesystem.new('/tmp'), :name => 'google', :identifier => 'https://www.google.com/accounts/o8/id', :require => 'omniauth-openid'
